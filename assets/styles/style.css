@@ -1,0 +1,119 @@
+/*-----------------------------------*\
+  #FONTS
+\*-----------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+/*-----------------------------------*\
+  #VARIABLES
+\*-----------------------------------*/
+:root {
+    /*COLORS*/
+
+    /*Primary*/
+    --text-color-01: hsl(238, 29%, 16%);
+    --text-color-02: hsl(14, 88%, 65%);
+
+    --bg-gradient-01:  hsl(273, 75%, 66%);
+    --bg-gradient-02: hsl(240, 73%, 65%);
+
+    /*Neutral*/
+    --text-color-03: hsl(237, 12%, 33%);
+    --text-color-04: hsl(240, 6%, 50%);
+
+    --dividers-color: blue: hsl(240, 5%, 91%);
+
+    /*TYPOGRAPHY*/
+    --body-font: 'Kumbh Sans', sans-serif;
+
+    --text-size: 1.3rem;
+}
+
+/*RESPONSIVE*/
+
+/*375px*/
+@media (min-width: 375px) {
+    :root {
+        --text-size: 1.4rem;
+    }
+}
+
+/*-----------------------------------*\
+  #RESET
+\*-----------------------------------*/
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+ input,
+ button {
+    background: none;
+    border: none;
+    font: inherit;
+}
+
+input { width: 100%; }
+
+button { cursor: pointer; }
+
+img {
+    max-width: 100%; 
+    height: auto;
+}
+
+html {
+    font-family: var(--body-font-family);
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: var(--text-size);
+    font-family: var(--body-font);
+    background: linear-gradient(var(--bg-gradient-01), var(--bg-gradient-02));
+    min-height: 100vh;
+}
+
+/*-----------------------------------*\
+  #REUSABLE
+\*-----------------------------------*/
+.container {
+    max-width: 100%;
+    padding-inline: 2.4rem;
+}
+
+.section {
+    padding-block: 4rem 2rem;
+}
+
+/*-----------------------------------*\
+  #CODE
+\*-----------------------------------*/
+main {
+    padding-inline: 2.4rem;
+}
+
+.accordion-container {
+    background-color: #FFFFFF;
+    padding-block: 4.8rem;
+    border-radius: 2.3rem;
+    box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.497159);
+}
+
+.top-left {
+    position: relative;
+}
+
+.top-left-image {
+
+}
+
+/*seguir em colocar as imagens e depois partir para o lado escrito da pagina, que é o accordion propriamente dito*/
