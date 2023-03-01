@@ -91,7 +91,7 @@ body {
 }
 
 .section {
-    padding-block: 4rem 2rem;
+    padding-block: 14.8rem 2rem;
 }
 
 /*-----------------------------------*\
@@ -103,17 +103,76 @@ main {
 
 .accordion-container {
     background-color: #FFFFFF;
-    padding-block: 4.8rem;
+    padding-block: 0rem 4.8rem;
     border-radius: 2.3rem;
     box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.497159);
-}
-
-.top-left {
     position: relative;
 }
 
-.top-left-image {
+.top-left {
+    /* position: absolute; */
+    /* width: calc(100% - 4.8rem); */
+}
+
+.top-left .images-container {
+    width: 23.7rem; /*limita o crescimento da imagem da mulher e da sombra*/
+    height: 13.2rem;
+    margin-inline: auto;
+    display: flex;
+    position: relative;
+}
+
+#woman-img-mobile {
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    transform: translateY(-6rem);
+}
+
+#shadow-img-mobile {
+    position: absolute;
+    width: 23.7rem;
+}
+
+#woman-img-desktop,
+#shadow-img-desktop,
+#box-img-desktop {
+    display: none;
+}
+
+.bottom-right {
+    /* margin-top: 13.2rem; */
+}
+
+/*-----------------------------------*\
+  #QUERRIES
+\*-----------------------------------*/
+@media (min-width: 1024px) {
+    .accordion-container {
+        background-color: #FFFFFF;
+        padding-block: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .top-left,
+    .bottom-right {
+        flex: 1;
+    }
+    
+    .top-left .images-container {
+        width: 100%;
+        height: auto;
+        /* margin-inline: auto; */
+        /* display: flex; */
+        /* position: relative; */
+    }
+
+    #woman-img-mobile,
+    #shadow-img-mobile {
+        display: none;
+    }
 
 }
 
-/*seguir em colocar as imagens e depois partir para o lado escrito da pagina, que é o accordion propriamente dito*/
+/*finalizar o layout de desktop, depois inserir imagens de layout, depois finalizar css e depois fazer js*/
