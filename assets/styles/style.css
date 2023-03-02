@@ -154,7 +154,7 @@ h1 {
     grid-template-columns: 1fr 2rem;
     padding-block: 1.7rem;
     cursor: pointer;
-    border-top: black solid 1px;
+    border-top: #E8E8EA solid 1px;
 }
 
 .accordion-item:first-child {
