@@ -147,6 +147,7 @@ main {
 h1 {
     font-size: 3.2rem;
     margin-bottom: 3rem;
+    text-transform: uppercase;
 }
 
 .accordion-item {
